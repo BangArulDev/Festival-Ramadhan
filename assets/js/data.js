@@ -33,23 +33,23 @@ export const jadwalList = [
 
 export const lombaList = [
   {
-    nama: "Musabaqah Tilawatil Qur'an",
-    desc: "Lomba membaca Al-Qur'an dengan tartil dan tajwid yang benar untuk mahasiswa umum.",
+    nama: "Lomba Cerdas Cermat",
+    desc: "Uji wawasan keislaman, sejarah, dan pengetahuan umum Anda dalam kompetisi beregu yang seru dan menantang.",
     hadiah: "Total Hadiah Rp 5.000.000",
   },
   {
-    nama: "Lomba Adzan & Iqomah",
-    desc: "Kompetisi mengumandangkan adzan dengan suara dan makhraj terbaik.",
-    hadiah: "Total Hadiah Rp 3.000.000",
-  },
-  {
-    nama: "Kaligrafi Kontemporer",
-    desc: "Seni menulis indah ayat Al-Qur'an di atas kanvas dengan gaya bebas/kontemporer.",
+    nama: "Lomba Menyanyi Religi",
+    desc: "Ekspresikan kecintaan pada agama melalui nada. Lomba menyanyi lagu religi solo dengan aransemen menarik.",
     hadiah: "Total Hadiah Rp 4.000.000",
   },
   {
-    nama: "Cerdas Cermat Islami",
-    desc: "Kompetisi beregu menguji wawasan seputar Sirah Nabawiyah, Fiqih, dan Sejarah Islam.",
+    nama: "Lomba Drama Musikal",
+    desc: "Kolaborasi seni peran dan musik dengan tema kisah inspiratif Islami dalam durasi 15-20 menit.",
+    hadiah: "Total Hadiah Rp 7.500.000",
+  },
+  {
+    nama: "Lomba Duta Muslim/Muslimah",
+    desc: "Pemilihan ikon remaja muslim yang cerdas, berbakat, dan memiliki kepribadian serta akhlak yang mulia.",
     hadiah: "Total Hadiah Rp 6.000.000",
   },
 ];
