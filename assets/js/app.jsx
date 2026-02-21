@@ -27,7 +27,7 @@ const App = () => {
                 <IconMoon />
               </div>
               <span className="font-bold text-xl tracking-tight text-emerald-900 font-serif">
-                Gema Ramadhan
+                Ramadhan Fest
               </span>
             </div>
 
@@ -52,10 +52,10 @@ const App = () => {
                 Lomba
               </a>
               <a
-                href="#bazaar"
+                href="#zakat"
                 className="text-slate-600 hover:text-emerald-600 font-medium transition"
               >
-                Bazaar
+                Zakat
               </a>
               <a
                 href="#donasi"
@@ -103,11 +103,11 @@ const App = () => {
                 Lomba
               </a>
               <a
-                href="#bazaar"
+                href="#zakat"
                 onClick={() => setIsMenuOpen(false)}
                 className="block px-3 py-2 text-slate-600 font-medium"
               >
-                Bazaar
+                Zakat
               </a>
               <a
                 href="#donasi"
@@ -141,14 +141,13 @@ const App = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white font-serif mb-6 leading-tight">
-            Gema Ramadhan <br className="hidden md:block" />
-            <span className="text-gold-400">Kampus Kita</span>
+            Ramadhan <span className="text-gold-400">Fest</span>
           </h1>
 
           <p className="mt-4 text-lg md:text-xl text-emerald-100 max-w-2xl mx-auto mb-10">
-            "Merajut Ukhuwah, Meraih Berkah di Bulan Suci." Mari ramaikan
-            semarak Ramadhan dengan berbagai kegiatan positif, kajian ilmu, dan
-            kebersamaan.
+            "Menembus Batas Kreasi, Membasuh Hati dengan Ukhuwah di Cahaya
+            Ramadhan." Mari ramaikan semarak Ramadhan dengan berbagai kegiatan
+            positif, kajian ilmu, dan kebersamaan.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -200,11 +199,11 @@ const App = () => {
               <IconShopping />
             </div>
             <h3 className="text-xl font-bold text-slate-800 mb-2 font-serif">
-              Bazaar Kreatif
+              Layanan Zakat
             </h3>
             <p className="text-slate-600">
-              Puluhan tenant makanan, minuman, and pakaian dari wirausaha
-              mahasiswa siap menemani ngabuburitmu.
+              Salurkan Zakat, Infaq, dan Sedekah Anda melalui Unit Pengumpul
+              Zakat (UPZ) Kampus yang resmi dan amanah.
             </p>
           </div>
         </div>
@@ -314,37 +313,37 @@ const App = () => {
         </div>
       </section>
 
-      {/* Bazaar Section */}
-      <section id="bazaar" className="py-20 bg-white">
+      {/* Zakat Section */}
+      <section id="zakat" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 relative">
-              {/* Placeholder for an image */}
               <div className="aspect-square md:aspect-video lg:aspect-square bg-slate-100 rounded-3xl overflow-hidden relative">
                 <img
-                  src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                  alt="Bazaar Ramadhan"
+                  src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Layanan Zakat"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-emerald-900/20"></div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-gold-400 text-emerald-950 p-6 rounded-2xl shadow-xl hidden md:block">
-                <p className="text-3xl font-bold font-serif mb-1">50+</p>
+                <p className="text-3xl font-bold font-serif mb-1">100%</p>
                 <p className="font-medium">
-                  Tenant Kuliner
-                  <br />& Fashion
+                  Amanah &
+                  <br />
+                  Transparan
                 </p>
               </div>
             </div>
 
             <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 font-serif mb-6">
-                Bazaar Ramadhan Kampus
+                Unit Pengumpul Zakat Kampus
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Tempat terbaik untuk ngabuburit! Nikmati berbagai macam takjil,
-                makanan berat, minuman segar, hingga pakaian muslim karya
-                mahasiswa dan UMKM sekitar kampus.
+                Mari sempurnakan ibadah Ramadhan dengan menunaikan kewajiban
+                Zakat Fitrah dan Zakat Maal. Kami hadir untuk memudahkan Anda
+                dalam berbagi kebahagiaan kepada mereka yang membutuhkan.
               </p>
 
               <ul className="space-y-4 mb-8">
@@ -353,7 +352,7 @@ const App = () => {
                     ✓
                   </div>
                   <span className="text-slate-700">
-                    Buka setiap hari pkl 15.00 - 18.30 WIB
+                    Zakat Fitrah: 3.5 Liter / 2.5 Kg Beras
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -361,7 +360,7 @@ const App = () => {
                     ✓
                   </div>
                   <span className="text-slate-700">
-                    Live Music Religi & Talkshow Ringan
+                    Layanan Jemput Zakat (Area Kampus)
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -369,21 +368,21 @@ const App = () => {
                     ✓
                   </div>
                   <span className="text-slate-700">
-                    Area makan yang luas dan nyaman
+                    Pembayaran digital via QRIS & Transfer Bank
                   </span>
                 </li>
               </ul>
 
               <div className="bg-emerald-50 border border-emerald-100 p-6 rounded-2xl">
                 <h4 className="font-bold text-emerald-900 mb-2">
-                  Ingin Membuka Stand/Tenant?
+                  Konsultasi Zakat?
                 </h4>
                 <p className="text-sm text-emerald-700 mb-4">
-                  Pendaftaran tenant masih dibuka untuk mahasiswa dan umum
-                  dengan kuota terbatas.
+                  Bingung cara menghitung Zakat Maal atau Zakat Profesi? Tim
+                  kami siap membantu perhitungan zakat Anda.
                 </p>
                 <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-lg font-medium transition">
-                  Daftar Tenant
+                  Hubungi Amil Zakat
                 </button>
               </div>
             </div>
@@ -405,8 +404,8 @@ const App = () => {
                 </span>
               </div>
               <p className="text-sm text-slate-400 max-w-sm mb-6">
-                Panitia Semarak Ramadhan Kampus 1447 H. Mewujudkan kampus yang
-                madani, religius, dan penuh keberkahan.
+                Panitia Ramadhan Fest 1447 H. Mewujudkan kampus yang madani,
+                religius, dan penuh keberkahan.
               </p>
               <div className="flex gap-4">
                 {/* Social Icons Placeholders */}
@@ -462,10 +461,10 @@ const App = () => {
                 </li>
                 <li>
                   <a
-                    href="#bazaar"
+                    href="#zakat"
                     className="hover:text-emerald-400 transition"
                   >
-                    Info Bazaar
+                    Layanan Zakat
                   </a>
                 </li>
                 <li>
@@ -506,7 +505,7 @@ const App = () => {
           </div>
 
           <div className="border-t border-slate-800 pt-8 mt-8 text-center text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} Panitia Gema Ramadhan Kampus.
+            &copy; {new Date().getFullYear()} Panitia Ramadhan Fest Kampus.
             Dibuat dengan niat baik.
           </div>
         </div>

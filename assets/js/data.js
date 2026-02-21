@@ -18,10 +18,10 @@ export const jadwalList = [
     lokasi: "Plaza Kampus",
   },
   {
-    tanggal: "1-20 Ramadhan",
-    acara: "Bazaar Ramadhan",
-    waktu: "15:00 - 18:30 WIB",
-    lokasi: "Sepanjang Jalan Utama Kampus",
+    tanggal: "1-30 Ramadhan",
+    acara: "Penerimaan Zakat & Sedekah",
+    waktu: "08:00 - 17:00 WIB",
+    lokasi: "Posko UPZ Masjid Kampus",
   },
   {
     tanggal: "20-30 Ramadhan",
