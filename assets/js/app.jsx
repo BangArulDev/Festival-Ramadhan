@@ -61,7 +61,7 @@ const App = () => {
                 href="#donasi"
                 className="bg-emerald-600 text-white px-5 py-2.5 rounded-full font-medium hover:bg-emerald-700 transition shadow-lg shadow-emerald-200"
               >
-                Donasi Iftar
+                Donasi Takjil
               </a>
             </div>
 
@@ -114,7 +114,7 @@ const App = () => {
                 onClick={() => setIsMenuOpen(false)}
                 className="block px-3 py-2 text-emerald-600 font-bold"
               >
-                Donasi Iftar
+                Donasi Untuk Takjil
               </a>
             </div>
           </div>
@@ -277,9 +277,14 @@ const App = () => {
                 rupiah. Pendaftaran dibuka hingga H-3 acara.
               </p>
             </div>
-            <button className="bg-white text-emerald-900 px-6 py-3 rounded-full font-bold hover:bg-emerald-50 transition whitespace-nowrap">
+            <a
+              href="https://drive.google.com/drive/folders/1UQ_yGXrK45ntJj7jfQ5gujaF4moz5Sfx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-emerald-900 px-6 py-3 rounded-full font-bold hover:bg-emerald-50 transition whitespace-nowrap inline-block"
+            >
               Unduh Juknis
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -296,16 +301,35 @@ const App = () => {
                 <h3 className="text-xl font-bold mb-3 font-serif min-h-[56px]">
                   {lomba.nama}
                 </h3>
-                <p className="text-emerald-100/80 text-sm mb-6 min-h-[80px]">
+                <p className="text-emerald-100/80 text-sm mb-4 min-h-[60px]">
                   {lomba.desc}
                 </p>
+                <div className="space-y-3 mb-6">
+                  <div className="text-xs text-emerald-200 border-l-2 border-gold-500 pl-3 py-1 bg-emerald-700/30 rounded-r-lg">
+                    <p className="font-bold text-gold-400 uppercase tracking-wider mb-1">
+                      Timeline
+                    </p>
+                    <p>{lomba.timeline}</p>
+                  </div>
+                  <div className="text-xs text-emerald-200 border-l-2 border-emerald-400 pl-3 py-1 bg-emerald-700/30 rounded-r-lg">
+                    <p className="font-bold text-emerald-400 uppercase tracking-wider mb-1">
+                      Narahubung
+                    </p>
+                    <p>{lomba.cp}</p>
+                  </div>
+                </div>
                 <div className="pt-4 border-t border-emerald-700">
                   <p className="text-gold-400 text-sm font-semibold mb-4">
                     {lomba.hadiah}
                   </p>
-                  <button className="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-2 rounded-lg font-medium transition">
+                  <a
+                    href={lomba.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-2 rounded-lg font-medium transition inline-block text-center"
+                  >
                     Daftar Sekarang
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
