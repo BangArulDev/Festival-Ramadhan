@@ -185,7 +185,7 @@ const App = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 mx-auto bg-gold-100 text-gold-600 rounded-2xl flex items-center justify-center mb-4 transform -rotate-3 hover:rotate-0 transition">
+            <div className="w-16 h-16 mx-auto bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-4 transform -rotate-3 hover:rotate-0 transition">
               <IconUsers />
             </div>
             <h3 className="text-xl font-bold text-slate-800 mb-2 font-serif">
