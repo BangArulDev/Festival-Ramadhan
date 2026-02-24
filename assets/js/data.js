@@ -1,3 +1,5 @@
+import zakatImg from "../images/zakat.jpeg";
+
 export const jadwalList = [
   {
     tanggal: "4 Maret",
@@ -53,7 +55,7 @@ export const lombaList = [
 ];
 
 export const zakatInfo = {
-  image: "assets/images/zakat.jpeg",
+  image: zakatImg,
   pengumpulan: "04 Maret 2026",
   pembagian: "16 Maret 2026 (Di Desa Cingkrong)",
   kontak: "+62 878-1850-8123 (Zainal)",
