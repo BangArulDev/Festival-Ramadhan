@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { jadwalList, lombaList, zakatInfo } from "./data.js";
+import { jadwalList, lombaList, zakatInfo, footerInfo } from "./data.js";
 import {
   IconMoon,
   IconCalendar,
@@ -11,6 +11,8 @@ import {
   IconShopping,
   IconMenu,
   IconX,
+  IconInstagram,
+  IconTiktok,
 } from "./components.jsx";
 
 const App = () => {
@@ -483,7 +485,7 @@ const App = () => {
                   <IconMoon />
                 </div>
                 <span className="font-bold text-xl tracking-tight text-white font-serif">
-                  Gema Ramadhan
+                  Ramadhan Fest
                 </span>
               </div>
               <p className="text-sm text-slate-400 max-w-sm mb-6">
@@ -491,24 +493,23 @@ const App = () => {
                 religius, dan penuh keberkahan.
               </p>
               <div className="flex gap-4">
-                {/* Social Icons Placeholders */}
                 <a
-                  href="#"
+                  href={footerInfo.sosmed.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition"
+                  title="Instagram"
                 >
-                  IG
+                  <IconInstagram />
                 </a>
                 <a
-                  href="#"
+                  href={footerInfo.sosmed.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition"
+                  title="TikTok"
                 >
-                  TW
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition"
-                >
-                  YT
+                  <IconTiktok />
                 </a>
               </div>
             </div>
@@ -550,11 +551,6 @@ const App = () => {
                     Layanan Zakat
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-emerald-400 transition">
-                    FAQ
-                  </a>
-                </li>
               </ul>
             </div>
 
@@ -564,8 +560,14 @@ const App = () => {
               </h4>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-2">
-                  <IconMapPin />
-                  <span>Sekretariat Masjid Kampus Utama, Lt. 1</span>
+                  <div className="mt-1">
+                    <IconMapPin />
+                  </div>
+                  <span>
+                    <strong>{footerInfo.lokasi}</strong>
+                    <br />
+                    {footerInfo.alamat}
+                  </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <svg
@@ -581,15 +583,15 @@ const App = () => {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
-                  <span>0812-3456-7890 (Akhi Budi)</span>
+                  <span>{footerInfo.kontak}</span>
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-slate-800 pt-8 mt-8 text-center text-sm text-slate-500">
-            &copy; {new Date().getFullYear()} Panitia Ramadhan Fest Kampus.
-            Dibuat dengan niat baik.
+            &copy; {new Date().getFullYear()} Panitia Ramadhan Fest{" "}
+            {footerInfo.lokasi}. Dibuat dengan niat baik.
           </div>
         </div>
       </footer>

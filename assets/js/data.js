@@ -5,13 +5,19 @@ export const jadwalList = [
     tanggal: "4 Maret",
     acara: "Pengumpulan Zakat",
     waktu: "13:00 - Selesai",
-    lokasi: "Posko UPZ Masjid",
+    lokasi: "Mushola An Nuur",
   },
   {
     tanggal: "10-11 Maret",
     acara: "Pelaksanaan Festival Ramadhan",
     waktu: "08:00 - Selesai",
     lokasi: "Masjid & Auditorium",
+  },
+  {
+    tanggal: "16 Maret",
+    acara: "Pembagian Zakat",
+    waktu: "13:00 - Selesai",
+    lokasi: "Desa Cingkrong",
   },
 ];
 
@@ -73,4 +79,15 @@ export const zakatInfo = {
       atasNama: "Tsania Daimatus Sakinah",
     },
   ],
+};
+
+export const footerInfo = {
+  lokasi: "Universitas An Nuur",
+  alamat: "Jl. Gajah Mada No.16, Purwodadi, Grobogan",
+  kontak: "Lailatul hikmah (+62 821-3372-0129)",
+  sosmed: {
+    instagram:
+      "https://www.instagram.com/bemunanpurwodadi?igsh=cDloM3hiZ2t0Ymh5",
+    tiktok: "https://www.tiktok.com/@bemunanpurwodadi?_r=1&_t=ZS-94BUpTNl1SZ",
+  },
 };
