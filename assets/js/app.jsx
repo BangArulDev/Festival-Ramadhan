@@ -17,6 +17,7 @@ import {
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedAgenda, setSelectedAgenda] = useState(null);
 
   return (
     <div className="font-sans">
@@ -242,6 +243,9 @@ const App = () => {
                   <h3 className="text-xl font-bold text-slate-800 mb-2">
                     {item.acara}
                   </h3>
+                  <p className="text-sm text-slate-500 mb-4">
+                    {item.deskripsi}
+                  </p>
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 text-sm text-slate-600">
                     <div className="flex items-center gap-2">
                       <IconClock /> {item.waktu}
@@ -252,7 +256,10 @@ const App = () => {
                   </div>
                 </div>
                 <div>
-                  <button className="text-emerald-600 font-medium hover:text-emerald-700 hover:underline">
+                  <button
+                    onClick={() => setSelectedAgenda(item)}
+                    className="text-emerald-600 font-medium hover:text-emerald-700 hover:underline px-4 py-2 rounded-lg bg-emerald-50 transition"
+                  >
                     Detail &rarr;
                   </button>
                 </div>
@@ -595,6 +602,86 @@ const App = () => {
           </div>
         </div>
       </footer>
+
+      {/* Agenda Detail Modal */}
+      {selectedAgenda && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
+          <div
+            className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
+            onClick={() => setSelectedAgenda(null)}
+          ></div>
+          <div className="bg-white rounded-3xl shadow-2xl w-full max-w-lg relative z-10 overflow-hidden transform transition-all animate-in zoom-in duration-300">
+            <div className="bg-emerald-600 p-6 text-white relative">
+              <button
+                onClick={() => setSelectedAgenda(null)}
+                className="absolute top-4 right-4 text-white/80 hover:text-white transition"
+              >
+                <IconX />
+              </button>
+              <div className="inline-block px-3 py-1 bg-emerald-500/50 border border-emerald-400 rounded-lg text-xs font-bold uppercase tracking-widest mb-3">
+                Detail Kegiatan
+              </div>
+              <h3 className="text-2xl font-bold font-serif">
+                {selectedAgenda.acara}
+              </h3>
+            </div>
+            <div className="p-6 md:p-8 space-y-6">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-1">
+                  <p className="text-xs text-slate-400 uppercase font-bold tracking-wider">
+                    Waktu
+                  </p>
+                  <p className="text-slate-800 font-medium flex items-center gap-2">
+                    <span className="text-emerald-600">
+                      <IconClock />
+                    </span>{" "}
+                    {selectedAgenda.waktu}
+                  </p>
+                </div>
+                <div className="space-y-1">
+                  <p className="text-xs text-slate-400 uppercase font-bold tracking-wider">
+                    Tanggal
+                  </p>
+                  <p className="text-slate-800 font-medium flex items-center gap-2">
+                    <span className="text-emerald-600">
+                      <IconCalendar />
+                    </span>{" "}
+                    {selectedAgenda.tanggal}
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <p className="text-xs text-slate-400 uppercase font-bold tracking-wider">
+                  Lokasi
+                </p>
+                <p className="text-slate-800 font-medium flex items-center gap-2">
+                  <span className="text-emerald-600">
+                    <IconMapPin />
+                  </span>{" "}
+                  {selectedAgenda.lokasi}
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-slate-100">
+                <p className="text-xs text-slate-400 uppercase font-bold tracking-wider mb-2">
+                  Informasi Tambahan
+                </p>
+                <p className="text-slate-600 leading-relaxed">
+                  {selectedAgenda.detail}
+                </p>
+              </div>
+
+              <button
+                onClick={() => setSelectedAgenda(null)}
+                className="w-full bg-slate-100 hover:bg-slate-200 text-slate-800 py-3 rounded-xl font-bold transition mt-4"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

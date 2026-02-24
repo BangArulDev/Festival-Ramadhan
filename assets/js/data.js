@@ -6,18 +6,30 @@ export const jadwalList = [
     acara: "Pengumpulan Zakat",
     waktu: "13:00 - Selesai",
     lokasi: "Mushola An Nuur",
+    deskripsi:
+      "Layanan penerimaan zakat fitrah dan maal oleh UPZ resmi Kampus.",
+    detail:
+      "Bawa beras seberat 2.5kg atau uang sebesar Rp 45.000 (sesuai ketentuan). Amil akan memberikan bukti setor zakat resmi.",
   },
   {
     tanggal: "10-11 Maret",
     acara: "Pelaksanaan Festival Ramadhan",
     waktu: "08:00 - Selesai",
     lokasi: "Masjid & Auditorium",
+    deskripsi:
+      "Puncak acara Festival Ramadhan dengan berbagai perlombaan dan kajian.",
+    detail:
+      "Meliputi Lomba Cerdas Cermat, Menyanyi Pop & Religi, Drama Musikal, dan Pemilihan Duta Muslim/Muslimah. Terbuka untuk umum dan mahasiswa.",
   },
   {
     tanggal: "16 Maret",
     acara: "Pembagian Zakat",
     waktu: "13:00 - Selesai",
     lokasi: "Desa Cingkrong",
+    deskripsi:
+      "Penyaluran zakat yang telah terkumpul kepada mustahik yang berhak.",
+    detail:
+      "Tim UPZ akan menuju lokasi Desa Cingkrong untuk pembagian langsung kepada warga yang membutuhkan sesuai data kependudukan.",
   },
 ];
 
