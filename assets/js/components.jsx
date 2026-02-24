@@ -180,9 +180,6 @@ export const IconTiktok = () => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <path d="M9 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-    <path d="M15 8a4 4 0 0 1 0 8" />
-    <path d="M15 2v16a4 4 0 0 1-4 4" />
-    <path d="M15 2a4 4 0 0 0 4 4" />
+    <path d="M9 12a4 4 0 1 0 4 4V2a5 5 0 0 0 5 5" />
   </svg>
 );
