@@ -17,16 +17,16 @@ export const lombaList = [
   {
     nama: "Lomba Cerdas Cermat",
     desc: "Uji wawasan keislaman, sejarah, dan pengetahuan umum Anda dalam kompetisi beregu yang seru dan menantang.",
-    hadiah: "Total Hadiah Rp 5.000.000",
+    hadiah: "Total Hadiah Rp 1.500.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSevFZJcabMTFY0ApRz2oI3F8BFlFCvStSe5yfqIq8DkmXX4Kw/viewform",
     timeline:
       "Pendaftaran: 25 Februari - 7 Maret 2026 | Pelaksanaan: 10-11 Maret 2026",
     cp: "+62 889-8521-2589 (Rahma)",
   },
   {
-    nama: "Lomba Menyanyi Religi",
+    nama: "Lomba Menyanyi Pop dan Religi",
     desc: "Ekspresikan kecintaan pada agama melalui nada. Lomba menyanyi lagu religi solo dengan aransemen menarik.",
-    hadiah: "Total Hadiah Rp 4.000.000",
+    hadiah: "Total Hadiah Rp 350.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeJYlzyWixsuqLdkfhKvZf3BJ5vtEdaFvwiF6m-osehmzyZzA/viewform",
     timeline:
       "Pendaftaran: 25 Februari - 7 Maret 2026 | Pelaksanaan: 10-11 Maret 2026",
@@ -35,7 +35,7 @@ export const lombaList = [
   {
     nama: "Lomba Drama Musikal",
     desc: "Kolaborasi seni peran dan musik dengan tema kisah inspiratif Islami dalam durasi 15-20 menit.",
-    hadiah: "Total Hadiah Rp 7.500.000",
+    hadiah: "Total Hadiah Rp 400.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfej89DLROdxP84nP0NcrtwhaSbZypTyS10tsqaXnwpYrDCaA/viewform",
     timeline:
       "Pendaftaran: 25 Feb - 7 Mar 2026 | Promosi: 5 Mar 2026 (00:00 WIB) | Pelaksanaan: 10-11 Mar 2026",
@@ -44,10 +44,31 @@ export const lombaList = [
   {
     nama: "Lomba Duta Muslim/Muslimah",
     desc: "Pemilihan ikon remaja muslim yang cerdas, berbakat, dan memiliki kepribadian serta akhlak yang mulia.",
-    hadiah: "Total Hadiah Rp 6.000.000",
+    hadiah: "Total Hadiah Rp 500.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSe5yLLhfvJg12cHTKBhFIoSyMwPY0vr3U03_vPR42tsJU4qFA/viewform",
     timeline:
       "Pendaftaran: 25 Februari - 7 Maret 2026 | Pelaksanaan: 10-11 Maret 2026",
     cp: "+62 857-2541-0790 (Septiana)",
   },
 ];
+
+export const zakatInfo = {
+  image: "assets/images/zakat.jpeg",
+  pengumpulan: "04 Maret 2026",
+  pembagian: "16 Maret 2026 (Di Desa Cingkrong)",
+  kontak: "+62 878-1850-8123 (Zainal)",
+  nominalUang: "Rp 45.000",
+  nominalBeras: "2,5 kg",
+  pembayaran: [
+    {
+      metode: "Transfer BRI",
+      nomor: "600701054382531",
+      atasNama: "Tsania Daimatus Sakinah",
+    },
+    {
+      metode: "Dana",
+      nomor: "087818508123",
+      atasNama: "Tsania Daimatus Sakinah",
+    },
+  ],
+};

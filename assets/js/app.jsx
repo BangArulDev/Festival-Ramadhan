@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { jadwalList, lombaList } from "./data.js";
+import { jadwalList, lombaList, zakatInfo } from "./data.js";
 import {
   IconMoon,
   IconCalendar,
@@ -344,70 +344,129 @@ const App = () => {
             <div className="lg:w-1/2 relative">
               <div className="aspect-square md:aspect-video lg:aspect-square bg-slate-100 rounded-3xl overflow-hidden relative">
                 <img
-                  src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  src={zakatInfo.image}
                   alt="Layanan Zakat"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-emerald-900/20"></div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-gold-400 text-emerald-950 p-6 rounded-2xl shadow-xl hidden md:block">
-                <p className="text-3xl font-bold font-serif mb-1">100%</p>
+              <div className="absolute -bottom-6 -right-6 bg-gold-400 text-emerald-950 p-6 rounded-2xl shadow-xl hidden md:block border-4 border-white">
+                <p className="text-3xl font-bold font-serif mb-1">Amanah</p>
                 <p className="font-medium">
-                  Amanah &
-                  <br />
-                  Transparan
+                  Pengelolaan Takmir
+                  <br />& UPZ Resmi
                 </p>
               </div>
             </div>
 
             <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 font-serif mb-6">
-                Unit Pengumpul Zakat Kampus
+                Layanan Zakat & Infaq
               </h2>
-              <p className="text-lg text-slate-600 mb-6">
+              <p className="text-lg text-slate-600 mb-8">
                 Mari sempurnakan ibadah Ramadhan dengan menunaikan kewajiban
-                Zakat Fitrah dan Zakat Maal. Kami hadir untuk memudahkan Anda
-                dalam berbagi kebahagiaan kepada mereka yang membutuhkan.
+                Zakat Fitrah. Kami hadir untuk memudahkan Anda dalam berbagi
+                kebahagiaan kepada mereka yang membutuhkan.
               </p>
 
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
-                    ✓
-                  </div>
-                  <span className="text-slate-700">
-                    Zakat Fitrah: 3.5 Liter / 2.5 Kg Beras
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
-                    ✓
-                  </div>
-                  <span className="text-slate-700">
-                    Layanan Jemput Zakat (Area Kampus)
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
-                    ✓
-                  </div>
-                  <span className="text-slate-700">
-                    Pembayaran digital via QRIS & Transfer Bank
-                  </span>
-                </li>
-              </ul>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                  <h4 className="font-bold text-slate-800 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-sm">
+                      📅
+                    </span>
+                    Timeline
+                  </h4>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li>
+                      <span className="font-medium text-slate-800">
+                        Pengumpulan:
+                      </span>{" "}
+                      {zakatInfo.pengumpulan}
+                    </li>
+                    <li>
+                      <span className="font-medium text-slate-800">
+                        Pembagian:
+                      </span>{" "}
+                      {zakatInfo.pembagian}
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                  <h4 className="font-bold text-slate-800 mb-3 flex items-center gap-2">
+                    <span className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-sm">
+                      🌾
+                    </span>
+                    Ketentuan Fitrah
+                  </h4>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li>
+                      <span className="font-medium text-slate-800">Beras:</span>{" "}
+                      {zakatInfo.nominalBeras}
+                    </li>
+                    <li>
+                      <span className="font-medium text-slate-800">Uang:</span>{" "}
+                      {zakatInfo.nominalUang}
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-              <div className="bg-emerald-50 border border-emerald-100 p-6 rounded-2xl">
-                <h4 className="font-bold text-emerald-900 mb-2">
-                  Konsultasi Zakat?
+              <div className="bg-emerald-900 text-white p-6 rounded-2xl shadow-xl mb-8">
+                <h4 className="font-bold mb-4 flex items-center gap-2">
+                  <span className="w-8 h-8 bg-emerald-700 rounded-lg flex items-center justify-center text-sm">
+                    💳
+                  </span>
+                  Metode Pembayaran Digital
                 </h4>
-                <p className="text-sm text-emerald-700 mb-4">
-                  Bingung cara menghitung Zakat Maal atau Zakat Profesi? Tim
-                  kami siap membantu perhitungan zakat Anda.
-                </p>
-                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-lg font-medium transition">
-                  Hubungi Amil Zakat
-                </button>
+                <div className="space-y-4">
+                  {zakatInfo.pembayaran.map((pay, i) => (
+                    <div
+                      key={i}
+                      className="flex justify-between items-center border-b border-emerald-800 pb-3 last:border-0 last:pb-0"
+                    >
+                      <div>
+                        <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                          {pay.metode}
+                        </p>
+                        <p className="font-mono text-lg font-bold">
+                          {pay.nomor}
+                        </p>
+                        <p className="text-emerald-200 text-sm">
+                          a.n {pay.atasNama}
+                        </p>
+                      </div>
+                      <button
+                        onClick={() => {
+                          navigator.clipboard.writeText(pay.nomor);
+                          alert("Nomor rekening disalin!");
+                        }}
+                        className="p-2 bg-emerald-800 hover:bg-emerald-700 rounded-lg transition"
+                        title="Salin Nomor"
+                      >
+                        📋
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <a
+                  href={`https://wa.me/${zakatInfo.kontak.replace(/[^0-9]/g, "")}`}
+                  target="_blank"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-xl font-bold transition flex-1 text-center shadow-lg shadow-emerald-200"
+                >
+                  Hubungi Amil (WA)
+                </a>
+                <div className="hidden sm:block">
+                  <p className="text-xs text-slate-400 uppercase font-bold">
+                    Narahubung
+                  </p>
+                  <p className="text-sm font-bold text-slate-800">
+                    {zakatInfo.kontak}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
