@@ -35,7 +35,7 @@ export const jadwalList = [
 
 export const lombaList = [
   {
-    nama: "Lomba Cerdas Cermat",
+    nama: "Lomba Cerdas Cermat ( SMA/SMK/MA Sederajat )",
     desc: "Uji wawasan keislaman, sejarah, dan pengetahuan umum Anda dalam kompetisi beregu yang seru dan menantang.",
     hadiah: "Total Hadiah Rp 1.500.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSevFZJcabMTFY0ApRz2oI3F8BFlFCvStSe5yfqIq8DkmXX4Kw/viewform",
@@ -44,7 +44,7 @@ export const lombaList = [
     cp: "+62 889-8521-2589 (Rahma)",
   },
   {
-    nama: "Lomba Menyanyi Pop dan Religi",
+    nama: "Lomba Menyanyi Pop dan Religi ( Internal Kampus )",
     desc: "Ekspresikan kecintaan pada agama melalui nada. Lomba menyanyi lagu religi solo dengan aransemen menarik.",
     hadiah: "Total Hadiah Rp 350.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeJYlzyWixsuqLdkfhKvZf3BJ5vtEdaFvwiF6m-osehmzyZzA/viewform",
@@ -53,7 +53,7 @@ export const lombaList = [
     cp: "+62 851-6975-5748 (Indah)",
   },
   {
-    nama: "Lomba Drama Musikal",
+    nama: "Lomba Drama Musikal ( Internal Kampus )",
     desc: "Kolaborasi seni peran dan musik dengan tema kisah inspiratif Islami dalam durasi 15-20 menit.",
     hadiah: "Total Hadiah Rp 400.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfej89DLROdxP84nP0NcrtwhaSbZypTyS10tsqaXnwpYrDCaA/viewform",
@@ -62,7 +62,7 @@ export const lombaList = [
     cp: "+62 877-0032-4167 (Hanik)",
   },
   {
-    nama: "Lomba Duta Muslim/Muslimah",
+    nama: "Lomba Duta Muslim/Muslimah ( Internal Kampus )",
     desc: "Pemilihan ikon remaja muslim yang cerdas, berbakat, dan memiliki kepribadian serta akhlak yang mulia.",
     hadiah: "Total Hadiah Rp 500.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSe5yLLhfvJg12cHTKBhFIoSyMwPY0vr3U03_vPR42tsJU4qFA/viewform",
