@@ -12,6 +12,16 @@ export const jadwalList = [
       "Bawa beras seberat 2.5kg atau uang sebesar Rp 45.000 (sesuai ketentuan). Amil akan memberikan bukti setor zakat resmi.",
   },
   {
+    tanggal: "6 Maret",
+    acara: "Kajian",
+    waktu: "15:00 - Selesai",
+    lokasi: "Mushola An Nuur",
+    deskripsi:
+      "Kajian islami dalam rangka menyambut dan mengisi bulan Ramadhan.",
+    detail:
+      "Kajian terbuka untuk seluruh civitas akademika dan masyarakat umum. Hadir tepat waktu dan jaga kekhusyukan selama acara berlangsung.",
+  },
+  {
     tanggal: "10-11 Maret",
     acara: "Pelaksanaan Festival Ramadhan",
     waktu: "08:00 - Selesai",
@@ -55,7 +65,7 @@ export const lombaList = [
   {
     nama: "Lomba Drama Musikal ( Internal Kampus )",
     desc: "Kolaborasi seni peran dan musik dengan tema kisah inspiratif Islami dalam durasi 15-20 menit.",
-    hadiah: "Total Hadiah Rp 400.000",
+    hadiah: "Total Hadiah Rp 500.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfej89DLROdxP84nP0NcrtwhaSbZypTyS10tsqaXnwpYrDCaA/viewform",
     timeline:
       "Pendaftaran: 25 Feb - 7 Mar 2026 | Promosi: 5 Mar 2026 (00:00 WIB) | Pelaksanaan: 10-11 Mar 2026",
@@ -64,7 +74,7 @@ export const lombaList = [
   {
     nama: "Lomba Duta Muslim/Muslimah ( Internal Kampus )",
     desc: "Pemilihan ikon remaja muslim yang cerdas, berbakat, dan memiliki kepribadian serta akhlak yang mulia.",
-    hadiah: "Total Hadiah Rp 500.000",
+    hadiah: "Total Hadiah Rp 400.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSe5yLLhfvJg12cHTKBhFIoSyMwPY0vr3U03_vPR42tsJU4qFA/viewform",
     timeline:
       "Pendaftaran: 25 Februari - 7 Maret 2026 | Pelaksanaan: 10-11 Maret 2026",
@@ -77,7 +87,7 @@ export const zakatInfo = {
   pengumpulan: "04 Maret 2026",
   pembagian: "16 Maret 2026 (Di Desa Cingkrong)",
   kontak: "+62 878-1850-8123 (Zainal)",
-  nominalUang: "Rp 45.000",
+  nominalUang: "Rp 40.000",
   nominalBeras: "2,5 kg",
   pembayaran: [
     {
