@@ -23,14 +23,14 @@ const App = () => {
   return (
     <div className="font-sans">
       {/* Navigation */}
-      <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-emerald-100 transition-all">
+      <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-blue-100 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center gap-2">
-              <div className="text-emerald-600">
+              <div className="text-navy-700">
                 <IconMoon />
               </div>
-              <span className="font-bold text-xl tracking-tight text-emerald-900 font-serif">
+              <span className="font-bold text-xl tracking-tight text-navy-900 font-serif">
                 Ramadhan Fest
               </span>
             </div>
@@ -39,31 +39,31 @@ const App = () => {
             <div className="hidden md:flex space-x-8 items-center">
               <a
                 href="#beranda"
-                className="text-slate-600 hover:text-emerald-600 font-medium transition"
+                className="text-slate-600 hover:text-navy-700 font-medium transition"
               >
                 Beranda
               </a>
               <a
                 href="#jadwal"
-                className="text-slate-600 hover:text-emerald-600 font-medium transition"
+                className="text-slate-600 hover:text-navy-700 font-medium transition"
               >
                 Jadwal
               </a>
               <a
                 href="#lomba"
-                className="text-slate-600 hover:text-emerald-600 font-medium transition"
+                className="text-slate-600 hover:text-navy-700 font-medium transition"
               >
                 Lomba
               </a>
               <a
                 href="#zakat"
-                className="text-slate-600 hover:text-emerald-600 font-medium transition"
+                className="text-slate-600 hover:text-navy-700 font-medium transition"
               >
                 Zakat
               </a>
               <a
                 href="#donasi"
-                className="bg-emerald-600 text-white px-5 py-2.5 rounded-full font-medium hover:bg-emerald-700 transition shadow-lg shadow-emerald-200"
+                className="bg-navy-700 text-white px-5 py-2.5 rounded-full font-medium hover:bg-navy-800 transition shadow-lg shadow-blue-200"
               >
                 Donasi Takjil
               </a>
@@ -73,7 +73,7 @@ const App = () => {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-slate-600 hover:text-emerald-600"
+                className="text-slate-600 hover:text-navy-700"
               >
                 {isMenuOpen ? <IconX /> : <IconMenu />}
               </button>
@@ -116,7 +116,7 @@ const App = () => {
               <a
                 href="#donasi"
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-3 py-2 text-emerald-600 font-bold"
+                className="block px-3 py-2 text-navy-700 font-bold"
               >
                 Donasi Untuk Takjil
               </a>
@@ -132,12 +132,12 @@ const App = () => {
       >
         {/* Decorative Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-          <div className="absolute top-20 right-10 w-64 h-64 bg-emerald-500/20 blob blur-2xl"></div>
-          <div className="absolute bottom-10 left-10 w-72 h-72 bg-gold-400/20 blob blur-3xl animation-delay-2000"></div>
+          <div className="absolute top-20 right-10 w-64 h-64 bg-gold-400 opacity-10 blob blur-2xl"></div>
+          <div className="absolute bottom-10 left-10 w-72 h-72 bg-blue-400 opacity-10 blob blur-3xl animation-delay-2000"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-800/50 border border-emerald-600 text-emerald-100 mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-navy-900 border border-gold-500 text-blue-100 mb-6 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
             <span className="text-sm font-medium tracking-wide">
               Menyambut Ramadhan 1447 H
@@ -148,7 +148,7 @@ const App = () => {
             Ramadhan <span className="text-gold-400">Fest</span>
           </h1>
 
-          <p className="mt-4 text-lg md:text-xl text-emerald-100 max-w-2xl mx-auto mb-10">
+          <p className="mt-4 text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10">
             "Menembus Batas Kreasi, Membasuh Hati dengan Ukhuwah di Cahaya
             Ramadhan." Mari ramaikan semarak Ramadhan dengan berbagai kegiatan
             positif, kajian ilmu, dan kebersamaan.
@@ -157,13 +157,13 @@ const App = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="#jadwal"
-              className="bg-gold-500 text-emerald-950 px-8 py-3.5 rounded-full font-bold text-lg hover:bg-gold-400 transition shadow-lg shadow-gold-500/30"
+              className="bg-gold-500 text-navy-950 px-8 py-3.5 rounded-full font-bold text-lg hover:bg-gold-400 transition shadow-gold-500/30 shadow-lg"
             >
               Lihat Jadwal
             </a>
             <a
               href="#lomba"
-              className="bg-transparent border-2 border-emerald-400 text-emerald-50 px-8 py-3.5 rounded-full font-bold text-lg hover:bg-emerald-800 transition"
+              className="bg-transparent border-2 border-gold-400 text-white px-8 py-3.5 rounded-full font-bold text-lg hover:bg-navy-700 transition"
             >
               Daftar Lomba
             </a>
@@ -175,7 +175,7 @@ const App = () => {
       <section className="py-12 bg-white relative -mt-8 mx-4 sm:mx-8 lg:mx-auto max-w-6xl rounded-2xl shadow-xl z-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 lg:px-12">
           <div className="text-center">
-            <div className="w-16 h-16 mx-auto bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-4 transform rotate-3 hover:rotate-0 transition">
+            <div className="w-16 h-16 mx-auto bg-blue-100 text-navy-700 rounded-2xl flex items-center justify-center mb-4 transform rotate-3 hover:rotate-0 transition">
               <IconBook />
             </div>
             <h3 className="text-xl font-bold text-slate-800 mb-2 font-serif">
@@ -187,7 +187,7 @@ const App = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 mx-auto bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-4 transform -rotate-3 hover:rotate-0 transition">
+            <div className="w-16 h-16 mx-auto bg-blue-100 text-navy-700 rounded-2xl flex items-center justify-center mb-4 transform -rotate-3 hover:rotate-0 transition">
               <IconTrophy />
             </div>
             <h3 className="text-xl font-bold text-slate-800 mb-2 font-serif">
@@ -199,7 +199,7 @@ const App = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 mx-auto bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-4 transform rotate-3 hover:rotate-0 transition">
+            <div className="w-16 h-16 mx-auto bg-blue-100 text-navy-700 rounded-2xl flex items-center justify-center mb-4 transform rotate-3 hover:rotate-0 transition">
               <IconShopping />
             </div>
             <h3 className="text-xl font-bold text-slate-800 mb-2 font-serif">
@@ -220,7 +220,7 @@ const App = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 font-serif mb-4">
               Agenda Ramadhan
             </h2>
-            <div className="w-24 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-navy-700 mx-auto rounded-full"></div>
             <p className="mt-4 text-slate-600">
               Jangan lewatkan rangkaian acara spesial selama sebulan penuh.
             </p>
@@ -232,7 +232,7 @@ const App = () => {
                 key={index}
                 className="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition border border-slate-100 flex flex-col md:flex-row gap-6 items-start md:items-center"
               >
-                <div className="bg-emerald-50 text-emerald-700 px-6 py-4 rounded-xl text-center min-w-[160px]">
+                <div className="bg-blue-50 text-navy-700 px-6 py-4 rounded-xl text-center min-w-[160px]">
                   <span className="block text-sm font-semibold uppercase tracking-wider mb-1">
                     Ramadhan
                   </span>
@@ -259,7 +259,7 @@ const App = () => {
                 <div>
                   <button
                     onClick={() => setSelectedAgenda(item)}
-                    className="text-emerald-600 font-medium hover:text-emerald-700 hover:underline px-4 py-2 rounded-lg bg-emerald-50 transition"
+                    className="text-navy-700 font-medium hover:text-navy-800 hover:underline px-4 py-2 rounded-lg bg-blue-50 transition"
                   >
                     Detail &rarr;
                   </button>
@@ -271,10 +271,7 @@ const App = () => {
       </section>
 
       {/* Competitions Section */}
-      <section
-        id="lomba"
-        className="py-20 bg-emerald-900 text-white pattern-bg relative"
-      >
+      <section id="lomba" className="py-20 text-white pattern-bg relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-2xl">
@@ -282,7 +279,7 @@ const App = () => {
                 Lomba Islami
               </h2>
               <div className="w-24 h-1 bg-gold-400 rounded-full mb-4"></div>
-              <p className="text-emerald-100">
+              <p className="text-blue-100">
                 Tunjukkan bakatmu, raih prestasi, dan dapatkan hadiah jutaan
                 rupiah. Pendaftaran dibuka hingga H-3 acara.
               </p>
@@ -291,7 +288,7 @@ const App = () => {
               href="https://drive.google.com/drive/folders/1UQ_yGXrK45ntJj7jfQ5gujaF4moz5Sfx"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-emerald-900 px-6 py-3 rounded-full font-bold hover:bg-emerald-50 transition whitespace-nowrap inline-block"
+              className="bg-gold-500 text-navy-950 px-6 py-3 rounded-full font-bold hover:bg-gold-400 transition whitespace-nowrap inline-block"
             >
               Unduh Juknis
             </a>
@@ -301,9 +298,9 @@ const App = () => {
             {lombaList.map((lomba, index) => (
               <div
                 key={index}
-                className="bg-emerald-800/50 backdrop-blur-sm border border-emerald-700 rounded-2xl p-6 hover:-translate-y-2 transition duration-300"
+                className="bg-navy-900 bg-opacity-60 backdrop-blur-sm border border-navy-600 rounded-2xl p-6 hover:-translate-y-2 transition duration-300"
               >
-                <div className="w-12 h-12 bg-gold-500/20 text-gold-400 rounded-full flex items-center justify-center mb-6">
+                <div className="w-12 h-12 bg-gold-400 bg-opacity-20 text-gold-400 rounded-full flex items-center justify-center mb-6">
                   <span className="font-serif font-bold text-xl">
                     {index + 1}
                   </span>
@@ -311,24 +308,24 @@ const App = () => {
                 <h3 className="text-xl font-bold mb-3 font-serif min-h-[56px]">
                   {lomba.nama}
                 </h3>
-                <p className="text-emerald-100/80 text-sm mb-4 min-h-[60px]">
+                <p className="text-blue-100 text-opacity-80 text-sm mb-4 min-h-[60px]">
                   {lomba.desc}
                 </p>
                 <div className="space-y-3 mb-6">
-                  <div className="text-xs text-emerald-200 border-l-2 border-gold-500 pl-3 py-1 bg-emerald-700/30 rounded-r-lg">
+                  <div className="text-xs text-blue-200 border-l-2 border-gold-500 pl-3 py-1 bg-navy-800 bg-opacity-50 rounded-r-lg">
                     <p className="font-bold text-gold-400 uppercase tracking-wider mb-1">
                       Timeline
                     </p>
                     <p>{lomba.timeline}</p>
                   </div>
-                  <div className="text-xs text-emerald-200 border-l-2 border-emerald-400 pl-3 py-1 bg-emerald-700/30 rounded-r-lg">
-                    <p className="font-bold text-emerald-400 uppercase tracking-wider mb-1">
+                  <div className="text-xs text-blue-200 border-l-2 border-blue-400 pl-3 py-1 bg-navy-800 bg-opacity-50 rounded-r-lg">
+                    <p className="font-bold text-blue-300 uppercase tracking-wider mb-1">
                       Narahubung
                     </p>
                     <p>{lomba.cp}</p>
                   </div>
                 </div>
-                <div className="pt-4 border-t border-emerald-700">
+                <div className="pt-4 border-t border-navy-700">
                   <p className="text-gold-400 text-sm font-semibold mb-4">
                     {lomba.hadiah}
                   </p>
@@ -336,7 +333,7 @@ const App = () => {
                     href={lomba.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-2 rounded-lg font-medium transition inline-block text-center"
+                    className="w-full bg-navy-700 hover:bg-navy-600 text-white py-2 rounded-lg font-medium transition inline-block text-center"
                   >
                     Daftar Sekarang
                   </a>
@@ -358,9 +355,12 @@ const App = () => {
                   alt="Layanan Zakat"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-emerald-900/20"></div>
+                <div
+                  className="absolute inset-0"
+                  style={{ backgroundColor: "rgba(15, 32, 80, 0.15)" }}
+                ></div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-gold-400 text-emerald-950 p-6 rounded-2xl shadow-xl hidden md:block border-4 border-white">
+              <div className="absolute -bottom-6 -right-6 bg-gold-400 text-navy-950 p-6 rounded-2xl shadow-xl hidden md:block border-4 border-white">
                 <p className="text-3xl font-bold font-serif mb-1">Amanah</p>
                 <p className="font-medium">
                   Pengelolaan Takmir
@@ -371,7 +371,7 @@ const App = () => {
 
             <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 font-serif mb-6">
-                Layanan Zakat & Infaq
+                Layanan Zakat &amp; Infaq
               </h2>
               <p className="text-lg text-slate-600 mb-8">
                 Mari sempurnakan ibadah Ramadhan dengan menunaikan kewajiban
@@ -382,7 +382,7 @@ const App = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
                   <h4 className="font-bold text-slate-800 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-sm">
+                    <span className="w-8 h-8 bg-blue-100 text-navy-700 rounded-lg flex items-center justify-center text-sm">
                       📅
                     </span>
                     Timeline
@@ -404,7 +404,7 @@ const App = () => {
                 </div>
                 <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
                   <h4 className="font-bold text-slate-800 mb-3 flex items-center gap-2">
-                    <span className="w-8 h-8 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-sm">
+                    <span className="w-8 h-8 bg-blue-100 text-navy-700 rounded-lg flex items-center justify-center text-sm">
                       🌾
                     </span>
                     Ketentuan Fitrah
@@ -422,9 +422,9 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="bg-emerald-900 text-white p-6 rounded-2xl shadow-xl mb-8">
+              <div className="bg-navy-900 text-white p-6 rounded-2xl shadow-xl mb-8">
                 <h4 className="font-bold mb-4 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-emerald-700 rounded-lg flex items-center justify-center text-sm">
+                  <span className="w-8 h-8 bg-navy-700 rounded-lg flex items-center justify-center text-sm">
                     💳
                   </span>
                   Metode Pembayaran Digital
@@ -433,16 +433,16 @@ const App = () => {
                   {zakatInfo.pembayaran.map((pay, i) => (
                     <div
                       key={i}
-                      className="flex justify-between items-center border-b border-emerald-800 pb-3 last:border-0 last:pb-0"
+                      className="flex justify-between items-center border-b border-navy-700 pb-3 last:border-0 last:pb-0"
                     >
                       <div>
-                        <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                        <p className="text-gold-400 text-xs font-bold uppercase tracking-wider">
                           {pay.metode}
                         </p>
                         <p className="font-mono text-lg font-bold">
                           {pay.nomor}
                         </p>
-                        <p className="text-emerald-200 text-sm">
+                        <p className="text-blue-200 text-sm">
                           a.n {pay.atasNama}
                         </p>
                       </div>
@@ -451,7 +451,7 @@ const App = () => {
                           navigator.clipboard.writeText(pay.nomor);
                           alert("Nomor rekening disalin!");
                         }}
-                        className="p-2 bg-emerald-800 hover:bg-emerald-700 rounded-lg transition"
+                        className="p-2 bg-navy-700 hover:bg-navy-600 rounded-lg transition"
                         title="Salin Nomor"
                       >
                         📋
@@ -465,7 +465,7 @@ const App = () => {
                 <a
                   href={`https://wa.me/${zakatInfo.kontak.replace(/[^0-9]/g, "")}`}
                   target="_blank"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3.5 rounded-xl font-bold transition flex-1 text-center shadow-lg shadow-emerald-200"
+                  className="bg-navy-700 hover:bg-navy-800 text-white px-8 py-3.5 rounded-xl font-bold transition flex-1 text-center shadow-lg shadow-blue-200"
                 >
                   Hubungi Amil (WA)
                 </a>
@@ -484,12 +484,12 @@ const App = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-950 text-slate-300 py-12 border-t-4 border-emerald-600">
+      <footer className="bg-navy-950 text-slate-300 py-12 border-t-4 border-gold-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <div className="text-emerald-500">
+                <div className="text-gold-400">
                   <IconMoon />
                 </div>
                 <span className="font-bold text-xl tracking-tight text-white font-serif">
@@ -505,7 +505,7 @@ const App = () => {
                   href={footerInfo.sosmed.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition"
+                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-gold-500 hover:text-navy-950 transition"
                   title="Instagram"
                 >
                   <IconInstagram />
@@ -514,7 +514,7 @@ const App = () => {
                   href={footerInfo.sosmed.tiktok}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-emerald-600 transition"
+                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-gold-500 hover:text-navy-950 transition"
                   title="TikTok"
                 >
                   <IconTiktok />
@@ -528,34 +528,22 @@ const App = () => {
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a
-                    href="#beranda"
-                    className="hover:text-emerald-400 transition"
-                  >
+                  <a href="#beranda" className="hover:text-gold-400 transition">
                     Beranda
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#jadwal"
-                    className="hover:text-emerald-400 transition"
-                  >
+                  <a href="#jadwal" className="hover:text-gold-400 transition">
                     Jadwal Acara
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#lomba"
-                    className="hover:text-emerald-400 transition"
-                  >
+                  <a href="#lomba" className="hover:text-gold-400 transition">
                     Pendaftaran Lomba
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#zakat"
-                    className="hover:text-emerald-400 transition"
-                  >
+                  <a href="#zakat" className="hover:text-gold-400 transition">
                     Layanan Zakat
                   </a>
                 </li>
@@ -608,18 +596,18 @@ const App = () => {
       {selectedAgenda && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
           <div
-            className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
+            className="absolute inset-0 bg-navy-950 bg-opacity-70 backdrop-blur-sm"
             onClick={() => setSelectedAgenda(null)}
           ></div>
           <div className="bg-white rounded-3xl shadow-2xl w-full max-w-lg relative z-10 overflow-hidden transform transition-all animate-in zoom-in duration-300">
-            <div className="bg-emerald-600 p-6 text-white relative">
+            <div className="bg-navy-800 p-6 text-white relative">
               <button
                 onClick={() => setSelectedAgenda(null)}
                 className="absolute top-4 right-4 text-white/80 hover:text-white transition"
               >
                 <IconX />
               </button>
-              <div className="inline-block px-3 py-1 bg-emerald-500/50 border border-emerald-400 rounded-lg text-xs font-bold uppercase tracking-widest mb-3">
+              <div className="inline-block px-3 py-1 bg-navy-700 border border-gold-500 rounded-lg text-xs font-bold uppercase tracking-widest mb-3">
                 Detail Kegiatan
               </div>
               <h3 className="text-2xl font-bold font-serif">
@@ -633,7 +621,7 @@ const App = () => {
                     Waktu
                   </p>
                   <p className="text-slate-800 font-medium flex items-center gap-2">
-                    <span className="text-emerald-600">
+                    <span className="text-navy-700">
                       <IconClock />
                     </span>{" "}
                     {selectedAgenda.waktu}
@@ -644,7 +632,7 @@ const App = () => {
                     Tanggal
                   </p>
                   <p className="text-slate-800 font-medium flex items-center gap-2">
-                    <span className="text-emerald-600">
+                    <span className="text-navy-700">
                       <IconCalendar />
                     </span>{" "}
                     {selectedAgenda.tanggal}
@@ -657,7 +645,7 @@ const App = () => {
                   Lokasi
                 </p>
                 <p className="text-slate-800 font-medium flex items-center gap-2">
-                  <span className="text-emerald-600">
+                  <span className="text-navy-700">
                     <IconMapPin />
                   </span>{" "}
                   {selectedAgenda.lokasi}

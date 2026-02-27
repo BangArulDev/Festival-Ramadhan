@@ -7,12 +7,120 @@ body {
 .font-serif {
   font-family: "Merriweather", serif;
 }
-.pattern-bg {
-  background-image: radial-gradient(#10b981 1px, transparent 1px);
-  background-size: 20px 20px;
-  background-color: #064e3b;
-  opacity: 0.95;
+
+/* ====== CUSTOM COLOR PALETTE (Navy + Gold) ====== */
+:root {
+  --navy-950: #060d1f;
+  --navy-900: #0b1735;
+  --navy-800: #0f2050;
+  --navy-700: #162a6b;
+  --navy-600: #1e3a8a;
+  --navy-500: #2952a3;
+  --navy-400: #4a72bf;
+  --navy-300: #7b9db5;
+  --navy-200: #a8c4d8;
+  --navy-100: #daeaf5;
+  --navy-50: #f0f7fc;
+
+  --gold-600: #a07c10;
+  --gold-500: #c9a227;
+  --gold-400: #d4af37;
+  --gold-300: #e8cb6e;
+  --gold-200: #f3e0a3;
+  --gold-100: #fbf5dc;
 }
+
+/* Utility classes for Navy */
+.bg-navy-950 {
+  background-color: var(--navy-950);
+}
+.bg-navy-900 {
+  background-color: var(--navy-900);
+}
+.bg-navy-800 {
+  background-color: var(--navy-800);
+}
+.bg-navy-700 {
+  background-color: var(--navy-700);
+}
+.bg-navy-600 {
+  background-color: var(--navy-600);
+}
+.bg-navy-50 {
+  background-color: var(--navy-50);
+}
+.text-navy-900 {
+  color: var(--navy-900);
+}
+.text-navy-800 {
+  color: var(--navy-800);
+}
+.text-navy-700 {
+  color: var(--navy-700);
+}
+.text-navy-600 {
+  color: var(--navy-600);
+}
+.text-navy-300 {
+  color: var(--navy-300);
+}
+.text-navy-100 {
+  color: var(--navy-100);
+}
+.border-navy-700 {
+  border-color: var(--navy-700);
+}
+.border-navy-600 {
+  border-color: var(--navy-600);
+}
+.border-navy-100 {
+  border-color: var(--navy-100);
+}
+
+/* Utility classes for Gold */
+.bg-gold-600 {
+  background-color: var(--gold-600);
+}
+.bg-gold-500 {
+  background-color: var(--gold-500);
+}
+.bg-gold-400 {
+  background-color: var(--gold-400);
+}
+.bg-gold-100 {
+  background-color: var(--gold-100);
+}
+.text-gold-500 {
+  color: var(--gold-500);
+}
+.text-gold-400 {
+  color: var(--gold-400);
+}
+.text-gold-300 {
+  color: var(--gold-300);
+}
+.border-gold-500 {
+  border-color: var(--gold-500);
+}
+.border-gold-400 {
+  border-color: var(--gold-400);
+}
+.shadow-gold-500\/30 {
+  box-shadow: 0 10px 25px rgba(201, 162, 39, 0.3);
+}
+
+/* ====== PATTERN BACKGROUND (Navy) ====== */
+.pattern-bg {
+  background-image: radial-gradient(
+    rgba(212, 175, 55, 0.25) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+  background-color: var(--navy-800);
+  opacity: 0.97;
+}
+
+/* ====== BLOB ANIMATION ====== */
 .blob {
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   animation: morph 8s ease-in-out infinite;
@@ -28,4 +136,10 @@ body {
   67% {
     border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
   }
+}
+
+/* ====== GOLD PULSE OVERRIDE ====== */
+.animate-pulse-gold {
+  background-color: var(--gold-400);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
