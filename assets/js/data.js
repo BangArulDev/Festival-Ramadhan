@@ -68,7 +68,7 @@ export const lombaList = [
     hadiah: "Total Hadiah Rp 500.000",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSfej89DLROdxP84nP0NcrtwhaSbZypTyS10tsqaXnwpYrDCaA/viewform",
     timeline:
-      "Pendaftaran: 25 Feb - 7 Mar 2026 | Promosi: 5 Mar 2026 (00:00 WIB) | Pelaksanaan: 10-11 Mar 2026",
+      "Pendaftaran: 25 Feb - 7 Mar 2026 | Promosi: 9 Mar 2026 (23:59 WIB) | Pelaksanaan: 10-11 Mar 2026",
     cp: "+62 877-0032-4167 (Hanik)",
   },
   {
@@ -101,6 +101,20 @@ export const zakatInfo = {
       atasNama: "Tsania Daimatus Sakinah",
     },
   ],
+};
+
+export const donasiTakjil = {
+  hargaPerPcs: "Rp 5.000",
+  deskripsi:
+    "Bantu kami menyediakan takjil untuk berbuka puasa bagi mahasiswa dan masyarakat sekitar kampus. Setiap donasi Anda akan disalurkan langsung untuk pembelian takjil.",
+  rekening: [
+    {
+      metode: "Transfer BRI",
+      nomor: "007601120680503",
+      atasNama: "FARIKHA IZZATI",
+    },
+  ],
+  kontak: "Rovi (+62 882-3313-5077)",
 };
 
 export const footerInfo = {

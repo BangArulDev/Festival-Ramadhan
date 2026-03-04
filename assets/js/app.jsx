@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { jadwalList, lombaList, zakatInfo, footerInfo } from "./data.js";
+import {
+  jadwalList,
+  lombaList,
+  zakatInfo,
+  donasiTakjil,
+  footerInfo,
+} from "./data.js";
 import {
   IconMoon,
   IconCalendar,
@@ -483,6 +489,148 @@ const App = () => {
         </div>
       </section>
 
+      {/* Donasi Takjil Section */}
+      <section id="donasi" className="py-20 bg-slate-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-100 border border-gold-300 text-navy-800 mb-5">
+              <span className="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+              <span className="text-sm font-semibold tracking-wide">
+                Program Sosial Ramadhan
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 font-serif mb-4">
+              Donasi <span className="text-navy-700">Takjil</span>
+            </h2>
+            <div className="w-24 h-1 bg-gold-400 mx-auto rounded-full mb-4"></div>
+            <p className="text-slate-600 max-w-xl mx-auto">
+              {donasiTakjil.deskripsi}
+            </p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            {/* Left: Harga & Info */}
+            <div className="lg:w-1/2 space-y-6">
+              {/* Price Card */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 text-center">
+                <div className="w-20 h-20 mx-auto bg-gold-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-4xl">🍱</span>
+                </div>
+                <p className="text-slate-500 text-sm font-medium uppercase tracking-wider mb-1">
+                  Harga Donasi
+                </p>
+                <p className="text-5xl font-bold text-navy-900 font-serif mb-2">
+                  {donasiTakjil.hargaPerPcs}
+                </p>
+                <p className="text-slate-500 text-sm">per pcs takjil</p>
+                <div className="mt-6 pt-6 border-t border-slate-100">
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Donasi Anda akan digunakan untuk menyiapkan paket takjil
+                    segar setiap hari selama Ramadhan. Semakin banyak yang
+                    berdonasi, semakin banyak yang bisa kami jangkau! 🤲
+                  </p>
+                </div>
+              </div>
+
+              {/* Contact */}
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex items-center gap-4">
+                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">📱</span>
+                </div>
+                <div>
+                  <p className="text-xs text-slate-400 uppercase font-bold tracking-wider mb-1">
+                    Konfirmasi Donasi
+                  </p>
+                  <p className="text-sm font-semibold text-slate-800">
+                    {donasiTakjil.kontak}
+                  </p>
+                </div>
+                <a
+                  href={`https://wa.me/${donasiTakjil.kontak.replace(/[^0-9]/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-auto bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl font-medium text-sm transition"
+                >
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Rekening */}
+            <div className="lg:w-1/2">
+              <div className="bg-navy-900 text-white rounded-2xl p-8 shadow-xl">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="w-10 h-10 bg-gold-400 bg-opacity-20 rounded-xl flex items-center justify-center">
+                    <span className="text-xl">💳</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold font-serif">
+                      Transfer Donasi
+                    </h3>
+                    <p className="text-blue-200 text-xs">
+                      Konfirmasi via WhatsApp setelah transfer
+                    </p>
+                  </div>
+                </div>
+
+                {donasiTakjil.rekening.map((rek, i) => (
+                  <div
+                    key={i}
+                    className="bg-navy-800 rounded-xl p-6 mb-4 last:mb-0 border border-navy-700"
+                  >
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-gold-400 text-xs font-bold uppercase tracking-wider">
+                        {rek.metode}
+                      </span>
+                      <span className="bg-gold-400 bg-opacity-10 text-gold-300 text-xs font-medium px-3 py-1 rounded-full border border-gold-500 border-opacity-30">
+                        Aktif
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between gap-3">
+                      <div>
+                        <p className="font-mono text-2xl font-bold tracking-wider mb-1">
+                          {rek.nomor}
+                        </p>
+                        <p className="text-blue-200 text-sm">
+                          a.n{" "}
+                          <span className="font-semibold text-white">
+                            {rek.atasNama}
+                          </span>
+                        </p>
+                      </div>
+                      <button
+                        onClick={() => {
+                          navigator.clipboard.writeText(rek.nomor);
+                          alert("Nomor rekening disalin!");
+                        }}
+                        className="flex-shrink-0 p-3 bg-navy-700 hover:bg-navy-600 rounded-xl transition"
+                        title="Salin Nomor"
+                      >
+                        📋
+                      </button>
+                    </div>
+                  </div>
+                ))}
+
+                <div className="mt-6 pt-6 border-t border-navy-700">
+                  <div className="flex items-center gap-3 p-4 bg-navy-800 rounded-xl border border-gold-500 border-opacity-20">
+                    <span className="text-2xl">❤️</span>
+                    <p className="text-blue-200 text-sm leading-snug">
+                      Setiap donasi{" "}
+                      <span className="text-gold-400 font-semibold">
+                        {donasiTakjil.hargaPerPcs}
+                      </span>{" "}
+                      = 1 pcs takjil untuk seseorang yang menunggu berbuka.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-navy-950 text-slate-300 py-12 border-t-4 border-gold-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -527,6 +675,11 @@ const App = () => {
                 Tautan Cepat
               </h4>
               <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="#donasi" className="hover:text-gold-400 transition">
+                    Donasi Takjil
+                  </a>
+                </li>
                 <li>
                   <a href="#beranda" className="hover:text-gold-400 transition">
                     Beranda
